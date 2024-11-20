@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Booking Website</title>
+</head>
+
+<body>
+    <section class="bg-cover bg-center md:h-screen h-fit"
+        style="background-image: url('./images/thanos-pal-vb-hPUzfpBo-unsplash.jpg')">
+        <!-- Navbar -->
+        <navbar class="navbar relative mx-auto px-4">
+            <!-- Navbar Container -->
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="sm:pl-3 sm:pt-3 w-16 h-16 mt-2">
+                    <a href="#"><img src="./images/4373252_coderwall_logo_logos_icon.svg" alt="Navbar Logo"></a>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-white uppercase hover:text-slate-200">home</a>
+                    <a href="#" class="text-white uppercase hover:text-slate-200">about</a>
+                    <a href="#" class="text-white uppercase hover:text-slate-200">service</a>
+                    <a href="#" class="text-white uppercase hover:text-slate-200">contact</a>
+                </div>
+
+                <div
+                    class="hidden md:flex px-4 space-x-6 uppercase text-lg text-white underline underline-offset-3 hover:text-slate-200 cursor-pointer">
+                    <a href="#"><i class="fas fa-search text-white pr-2"></i>search</a>
+                    <a href="#"><i class="fas fa-sign-in-alt text-white pr-2"></i>sign in</a>
+                    <a href="#">EN<i class="fas fa-chevron-down text-white pl-2"></i></a>
+                </div>
+
+                <!-- Hamburger Button -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none mx-4">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menu"
+                class="md:hidden hidden flex-col items-center self-end py-5 space-y-6 text-white font-bold sm:w-auto sm:self-center left-6 right-6">
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4" href="#">Home</a>
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4" href="#">About</a>
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4" href="#">Service</a>
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4" href="#">Contact</a>
+            </div>
+        </navbar>
+
+        <!-- Hero Section -->
+        <div class="flex-col md:flex md:col-span-1 md:flex-col md:items-center md:justify-center mt-24">
+            <h1 class="text-bold text-white text-5xl leading-lg text-center py-4">Traveling Opens The Door Of </br>New
+                Learning</h1>
+
+            <div
+                class="mt-0 md:mt-24 md:px-6 px-8 p-3 py-3 m-3 pt-3 rounded-lg bg-slate-100 flex-col items-center justify-center md:flex md:flex-row space-x-4">
+                <div class="flex flex-col items-center justify-center">
+                    <p class="font-bold text-lg">Where do you want to go</p>
+                    <p class="text-sm">feel free to inquire</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <p class="font-bold text-lg">Check In</p>
+                    <p class="pr-3">Clock rotating <i class="fas fa-clock"></i></p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <p class="font-bold text-lg">Check Out</p>
+                    <p class="pr-3">Have few details pinned <i class="fas fa-book"></i></p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <p class="font-semibold text-lg ">Be our daily guest</p>
+                    <p class="pr-3">Scroll for more.. <i class="fas fa-chevron-down"></i>
+                    </p>
+                </div>
+                <div>
+                    <p
+                        class="px-4 py-2 mb-2 bg-blue-600 hover:bg-blue-400 cursor-pointer rounded-md text-center text-white text-lg">
+                        check
+                        availability. <i class="fas fa-chevron-right text-sm"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="mt-10 container mx-auto">
+        <div>
+            <h1 class="text-center font-bold text-4xl">We Provide Best Solution <br>For Your Vacation</h1>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:space-x-4 mt-14 px-4">
+            <div class="flex flex-col">
+                <i class="fas fa-house text-center pb-3 fa-2xl text-blue-500"></i>
+                <h1 class="text-center font-semibold pt-3 text-lg pb-4">Destination Address</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus in officiis dicta debitis
+                    blanditiis
+                    odio facilis impedit optio enim quo.</p>
+            </div>
+            <div class="flex flex-col md:mt-0 mt-16">
+                <i class="fas fa-plane text-center pb-3 fa-2xl text-blue-500"></i>
+                <h1 class="text-center font-semibold pt-3 text-lg pb-4">Fly To You Destination</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus in officiis dicta debitis
+                    blanditiis
+                    odio facilis impedit optio enim quo.</p>
+            </div>
+            <div class="flex flex-col md:mt-0 mt-16">
+                <i class="fas fa-location text-center pb-3 fa-2xl text-blue-500"></i>
+                <h1 class="text-center font-semibold pt-3 text-lg pb-4">Search Your Destination</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus in officiis dicta debitis
+                    blanditiis
+                    odio facilis impedit optio enim quo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-10 space-y-8 container mx-auto">
+        <!-- CTA HEADING -->
+        <div>
+            <h1 class="text-4xl text-center font-bold">Trending Of The Year.</h1>
+        </div>
+        <!-- CTA Container-->
+        <div class="flex flex-col md:flex-row space-x-4">
+            <!-- CTA Card 1-->
+            <div class="flex flex-col shadow-2xl p-3 px-4 h-fit">
+                <img src="./images/earth-eCohyQiC_qg-unsplash.jpg" alt=""
+                    class="h-72 w-full md:h-1/3 md:w-full rounded-lg bg-cover bg-center">
+                <div class="flex flex-row items-center justify-between mt-6 pt-3">
+                    <div>
+                        <h1 class="font-semibold text-2xl">Travel Tour Oceans</h1>
+                        <p class="pt-3">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <i class="fas fa-heart text-red-600"></i>
+                </div>
+
+                <div class="flex flex-row mt-4 items-center justify-between">
+                    <div class="flex flex-col">
+                        <h1 class="font-semibold">Price</h1>
+                        <p class="font-bold text-3xl">$ / 456.50</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mt-4 pb-0">
+                    <ul class="flex">
+                        <li><i class="fas fa-clock text-red-600 pr-6"></i></li>
+                        <p>5 Days</p>
+                    </ul>
+
+                    <ul class="flex">
+                        <li><i class="fas fa-check text-red-600 pr-6"></i></li>
+                        <p>Get Our Guidance</p>
+                    </ul>
+
+                    <ul class="flex">
+                        <li><i class="fas fa-check text-red-600 pr-6"></i></li>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </ul>
+                </div>
+            </div>
+            <!-- CTA Card 2-->
+            <div class="flex flex-col shadow-2xl p-4 h-fit">
+                <img src="./images/leo-rivas-R_BLOGXpsOg-unsplash.jpg" alt=""
+                    class="h-72 w-full md:h-1/3 md:w-full rounded-lg bg-cover bg-center">
+
+                <div class="flex flex-row items-center justify-between mt-6 pt-3">
+                    <div>
+                        <h1 class="font-semibold text-2xl">Travel Tour Recreation.</h1>
+                        <p class="pt-3">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <i class="fas fa-heart text-gray-300"></i>
+                </div>
+
+                <div class="flex flex-row mt-4 items-center justify-between">
+                    <div class="flex flex-col">
+                        <h1 class="font-semibold">Price</h1>
+                        <p class="font-bold text-2xl">$ / 200.50</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mt-4 pb-0">
+                    <ul class="flex">
+                        <li><i class="fas fa-clock text-red-600 pr-6"></i></li>
+                        <p>5 Days</p>
+                    </ul>
+
+                    <ul class="flex">
+                        <li><i class="fas fa-check text-red-600 pr-6"></i></li>
+                        <p>Get Our Guidance</p>
+                    </ul>
+
+                    <ul class="flex">
+                        <li><i class="fas fa-check text-red-600 pr-6"></i></li>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </ul>
+                </div>
+            </div>
+            <!-- CTA Card 3-->
+            <div class="flex flex-col shadow-2xl p-4 h-fit">
+                <img src="./images/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg" alt=""
+                    class="h-72 w-full md:h-1/3 md:w-full rounded-lg bg-cover bg-center">
+
+                <div class="flex flex-row items-center justify-between mt-6 pt-3">
+                    <div>
+                        <h1 class="font-semibold text-2xl">Palm Ocean.</h1>
+                        <p class="pt-3">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <i class="fas fa-heart text-gray-300"></i>
+                </div>
+
+                <div class="flex flex-row mt-4 items-center justify-between">
+                    <div class="flex flex-col">
+                        <h1 class="font-semibold">Price</h1>
+                        <p class="font-bold text-2xl">$ / 502.00</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mt-4 pb-0">
+                    <ul class="flex">
+                        <li><i class="fas fa-clock text-red-600 pr-6"></i></li>
+                        <p>5 Days</p>
+                    </ul>
+
+                    <ul class="flex">
+                        <li><i class="fas fa-check text-red-600 pr-6"></i></li>
+                        <p>Get Our Guidance</p>
+                    </ul>
+
+                    <ul class="flex">
+                        <li><i class="fas fa-check text-red-600 pr-6"></i></li>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="mt-8">
+        <h1 class="font-bold text-4xl text-center ">Top Destinations</h1>
+
+        <div class="container mx-auto mt-4 px-4">
+            <ul class="grid grid-col-2 grid-row-1 md:grid-col-5 md:grid-row-2 gap-4">
+                <li
+                    class="col-1 row-start-1 row-end-2 md:col-start-1 md:col-end-2 md:col-span-1 md:row-start-1 md:row-end-3 md:row-span-2">
+                    <img src="./images/ouael-ben-salah-4oNBFWXmWBc-unsplash.jpg"
+                        class="w-full h-60 md:h-full w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-2 row-end-3 md:col-start-2 md:col-end-4 md:col-span-2 md:row-start-1 md:row-end-2 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-EiDO1b9Zdxg-unsplash.jpg"
+                        class="h-52 w-full bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-3 row-end-4 md:col-start-2 md:col-end-3 md:col-span-1 md:row-start-2 md:row-end-3 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-i6bEjkxQ7BQ-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-4 row-end-5 md:col-start-3 md:col-end-4 md:col-span-1 md:row-start-2 md:row-end-3 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-I8eTnbYeVnY-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-5 row-end-6 md:col-start-4 md:col-end-5 md:col-span-1 md:row-start-1 md:row-end-2 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-OLf8SznBIBM-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-6 row-end-7 md:col-start-4 md:col-end-5 md:col-span-1 md:row-start-2 md:row-end-3 md:row-span-1">
+                    <img src="./images/sandra-seitamaa-87ov3Ko6Nt0-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="mt-10 mx-6 mb-8">
+        <h2 class="text-3xl text-center font-bold">Clients Feedback</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div class="px-4 p-2 shadow-xl">
+                <div class="flex flex-row items-center justify-between">
+                    <i class="fas fa-quote-left text-gray-300"></i>
+                    <p>12/11/23</p>
+                </div>
+                <p class="text-center pt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nemo
+                    cupiditate ad deserunt, nulla
+                    obcaecati ullam quis amet dignissimos tenetur aliquid modi doloribus, adipisci illo corrupti iusto
+                    culpa a accusantium.</p>
+
+                <div class="flex flex-col items-center justify-center mt-6">
+                    <a href="#"><img class="h-24 w-24 rounded-full" src="./images/cajeo-zhang-gh5yr7EwchI-unsplash.jpg"
+                            alt=""></a>
+                    <p class="font-semibold">Cajeo-Zhang</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center justify-center mt-3">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="px-4 p-2 shadow-xl">
+                <div class="flex flex-row items-center justify-between">
+                    <i class="fas fa-quote-left text-blue-500"></i>
+                    <p>12/11/23</p>
+                </div>
+                <p class="text-center pt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nemo
+                    cupiditate ad deserunt, nulla
+                    obcaecati ullam quis amet dignissimos tenetur aliquid modi doloribus, adipisci illo corrupti iusto
+                    culpa a accusantium.</p>
+
+                <div class="flex flex-col items-center justify-center mt-6">
+                    <a href="#"><img class="h-24 w-24 rounded-full"
+                            src="./images/muhsin-rozhan-UY4re4x8els-unsplash.jpg" alt=""></a>
+                    <p class="font-semibold">Muhsin-Rozhan</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center justify-center mt-3">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="px-4 p-2 shadow-xl">
+                <div class="flex flex-row items-center justify-between">
+                    <i class="fas fa-quote-left text-red-400"></i>
+                    <p>12/11/23</p>
+                </div>
+                <p class="text-center pt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nemo
+                    cupiditate ad deserunt, nulla
+                    obcaecati ullam quis amet dignissimos tenetur aliquid modi doloribus, adipisci illo corrupti iusto
+                    culpa a accusantium.</p>
+
+                <div class="flex flex-col items-center justify-center mt-6">
+                    <a href="#"><img class="h-24 w-24 rounded-full" src="./images/jc-gellidon-vWmytIFLBZk-unsplash.jpg"
+                            alt=""></a>
+                    <p class="font-semibold">Jc-Gellidon</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center justify-center mt-3">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel -->
+    <section class="mt-16  mx-10">
+        <div class="container mx-auto flex flex-col md:flex-row gap-4 items-center justify-center bg-red-50">
+            <div>
+                <img class="h-60 w-96" src="./images/earth-eCohyQiC_qg-unsplash copy.jpg" alt="">
+            </div>
+            <div class="flex flex-col">
+                <h1 class="font-bold text-center md:text-start text-3xl pb-4">Your travel journey starts here</h1>
+                <p class="text-bold mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eligendi
+                    magni illo corporis
+                    placeat rem? Earum architecto perferendis dolorem inventore!</p>
+                <div class="flex justify-center md:justify-start">
+                    <a class="inline-block items-center bg-red-700 hover:bg-red-400 text-white uppercase p-3 tracking-wider rounded-lg"
+                        href="#">sign up to newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 bg-red-700 px-8">
+        <div class="grid grid-row md:grid-cols-4 gap-8 pt-10">
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-row">
+                    <i class="fas fa-plane text-white pr-3"></i>
+                    <p class="text-white text-lg font-bold cursor-pointer underline underline-offset-2">Travel</p>
+                </div>
+                <p class="text-white items-center pt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus
+                    aspernatur
+                    impedit est,
+                    deserunt
+                    necessitatibus quidem numquam debitis magni possimus culpa at dolores in ipsam expedita ducimus
+                    ipsum ullam, dolore nam.</p>
+            </div>
+
+
+            <ul class="flex flex-col space-x-4 items-center text-white space-y-4">
+                <li class="font-bold text-lg cursor-pointer underline underline-offset-2">
+                    About
+                    Us</li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Home.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Pricing.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Products.
+                </li>
+            </ul>
+
+            <ul class="flex flex-col space-x-4 items-center text-white space-y-4">
+                <li class="font-bold text-lg cursor-pointer underline underline-offset-2">
+                    Blog</li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">About.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Careers.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Community.
+                </li>
+            </ul>
+
+            <ul class="flex flex-col space-x-4 items-center text-white space-y-4">
+                <li class="font-bold text-lg cursor-pointer underline underline-offset-2">Company</li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Privacy Policy.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Services.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Schedules.
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
