@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Booking Website</title>
+</head>
+
+<body>
+    <section class="bg-cover bg-center md:h-min h-min"
+        style="background-image: url('./images/thanos-pal-vb-hPUzfpBo-unsplash.jpg')">
+        <!-- Navbar -->
+        <navbar class="navbar relative mx-auto px-4">
+            <!-- Navbar Container -->
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="sm:pl-3 sm:pt-3 w-16 h-16 mt-2">
+                    <a href="#"><img src="./images/4373252_coderwall_logo_logos_icon.svg" alt="Navbar Logo"></a>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-white uppercase hover:text-slate-200">home</a>
+                    <a href="about.html" class="text-white uppercase hover:text-slate-200">about</a>
+                    <a href="service.html" class="text-white uppercase hover:text-slate-200">service</a>
+                    <a href="contact.html" class="text-white uppercase hover:text-slate-200">contact</a>
+                </div>
+
+                <div
+                    class="hidden md:flex px-4 space-x-6 uppercase text-lg text-white underline underline-offset-3 hover:text-slate-200 cursor-pointer">
+                    <a href="#"><i class="fas fa-search text-white pr-2"></i>search</a>
+                    <a href="#"><i class="fas fa-sign-in-alt text-white pr-2"></i>sign in</a>
+                    <a href="#">EN<i class="fas fa-chevron-down text-white pl-2"></i></a>
+                </div>
+
+                <!-- Hamburger Button -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none mx-4">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menu"
+                class="md:hidden hidden flex-col items-center self-end py-5 space-y-6 text-white font-bold sm:w-auto sm:self-center left-6 right-6">
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4"
+                    href="index.html">Home</a>
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4"
+                    href="about.html">About</a>
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4"
+                    href="service.html">Service</a>
+                <a class="cursor-pointer underline underline-offset-2 hover:underline-offset-4"
+                    href="contact.html">Contact</a>
+            </div>
+        </navbar>
+    </section>
+
+
+    <!-- Travel -->
+    <section class="mt-16  mx-10">
+        <div
+            class="container mx-auto flex flex-col md:flex-row gap-4 pb-4 items-center justify-center shadow-xl bg-red-50">
+            <div>
+                <img class="h-60 w-96 p-4" src="./images/earth-eCohyQiC_qg-unsplash copy.jpg" alt="">
+            </div>
+            <div class="flex flex-col">
+                <h1 class="font-bold text-center md:text-start text-3xl pb-4">Your travel journey starts here</h1>
+                <p class="text-bold mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                    eligendi
+                    magni illo corporis
+                    placeat rem? Earum architecto perferendis dolorem inventore!</p>
+                <div class="flex justify-center md:justify-start">
+                    <a class="inline-block items-center bg-blue-700 hover:bg-blue-400 text-white uppercase p-3 tracking-wider rounded-lg"
+                        href="#">sign up to newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="mt-8">
+        <h1 class="font-bold text-4xl text-center ">Top Destinations</h1>
+
+        <div class="container mx-auto mt-4 px-4">
+            <ul class="grid grid-col-2 grid-row-1 md:grid-col-5 md:grid-row-2 gap-4">
+                <li
+                    class="col-1 row-start-1 row-end-2 md:col-start-1 md:col-end-2 md:col-span-1 md:row-start-1 md:row-end-3 md:row-span-2">
+                    <img src="./images/ouael-ben-salah-4oNBFWXmWBc-unsplash.jpg"
+                        class="w-full h-60 md:h-full w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-2 row-end-3 md:col-start-2 md:col-end-4 md:col-span-2 md:row-start-1 md:row-end-2 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-EiDO1b9Zdxg-unsplash.jpg"
+                        class="h-52 w-full bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-3 row-end-4 md:col-start-2 md:col-end-3 md:col-span-1 md:row-start-2 md:row-end-3 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-i6bEjkxQ7BQ-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-4 row-end-5 md:col-start-3 md:col-end-4 md:col-span-1 md:row-start-2 md:row-end-3 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-I8eTnbYeVnY-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-5 row-end-6 md:col-start-4 md:col-end-5 md:col-span-1 md:row-start-1 md:row-end-2 md:row-span-1">
+                    <img src="./images/ouael-ben-salah-OLf8SznBIBM-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+                <li
+                    class="col-1 row-start-6 row-end-7 md:col-start-4 md:col-end-5 md:col-span-1 md:row-start-2 md:row-end-3 md:row-span-1">
+                    <img src="./images/sandra-seitamaa-87ov3Ko6Nt0-unsplash.jpg"
+                        class="h-52 w-full md:w-60 bg-cover bg-center rounded-md" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 bg-blue-600 px-8">
+        <div class="grid grid-row md:grid-cols-4 gap-8 pt-10">
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-row">
+                    <i class="fas fa-plane text-white pr-3"></i>
+                    <p class="text-white text-lg font-bold cursor-pointer underline underline-offset-2">Travel</p>
+                </div>
+                <p class="text-white items-center pt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus
+                    aspernatur
+                    impedit est,
+                    deserunt
+                    necessitatibus quidem numquam debitis magni possimus culpa at dolores in ipsam expedita ducimus
+                    ipsum ullam, dolore nam.</p>
+            </div>
+
+
+            <ul class="flex flex-col space-x-4 items-center text-white space-y-4">
+                <li class="font-bold text-lg cursor-pointer underline underline-offset-2">
+                    About
+                    Us</li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Home.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Pricing.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Products.
+                </li>
+            </ul>
+
+            <ul class="flex flex-col space-x-4 items-center text-white space-y-4">
+                <li class="font-bold text-lg cursor-pointer underline underline-offset-2">
+                    Blog</li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">About.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Careers.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Community.
+                </li>
+            </ul>
+
+            <ul class="flex flex-col space-x-4 items-center text-white space-y-4">
+                <li class="font-bold text-lg cursor-pointer underline underline-offset-2">Company</li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Privacy Policy.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Services.
+                </li>
+                <li class="cursor-pointer underline underline-offset-2 hover:underline-offset-4">Schedules.
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
